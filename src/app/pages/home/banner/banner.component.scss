@@ -1,0 +1,13 @@
+.banner_section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    border: 5px solid red;
+
+    img {
+        width: 50%;
+        min-width: 350px;
+    }
+}

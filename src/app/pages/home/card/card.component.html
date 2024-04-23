@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="subcontainer">
+        <div class="text_decoration1">
+            <h1><b>Top Picks For You</b></h1>
+            <p>Lorem ipsum dolor sit, sed dolore magni neque vel officia. Praesentium aut optio excepturi saepe?</p>
+        </div>
+
+        <div class="product-list">
+            <div class="card" *ngFor="let i of products">
+
+                <img [src]="i?.image" alt="">
+
+                <div class="card_content">
+                    <h1><b>{{i.name}}</b></h1>
+                </div>
+
+                <div class="for_left_right">
+                    <div>
+                        <span style="text-decoration: line-through; color: red;">{{i.oPrice}}</span>
+                        <span>{{i.nPrice}}</span>
+                        <br>
+                        <span *ngFor="let i of [1,2,3,4,5]">
+                            <i style="color: orange;" class="fa fa-star" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div>
+                        <button style="color: green;"><i class="fa fa-shopping-bag"
+                                style="font-size:20px; padding: 8px; color: green;"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="button">View All Products</button>
+
+    </div>
+</div>
