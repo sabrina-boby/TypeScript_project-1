@@ -1,0 +1,33 @@
+.subcontainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 5px solid blue;
+    background: #FAF5F1;
+    padding: 50px;
+
+    .for_part3 {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        align-items: center;
+        column-gap: 10px;
+
+        .text_decoration2 {
+            padding: 20px;
+        }
+    }
+
+    @media only screen and (max-width: 700px) {
+        .for_part3 {
+           display: flex;
+           flex-direction: column-reverse;
+        }
+        .text_decoration2 {
+            padding: 20px;
+
+            .bottom-div {
+                align-items: center;
+            }
+        }
+    }
+}

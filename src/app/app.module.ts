@@ -14,7 +14,7 @@ import { DigitOnlyModule } from '@uiowa/digit-only';
 @NgModule({
   declarations: [
     AppComponent,
-    PagesComponent
+    PagesComponent,
   ],
   imports: [
     BrowserModule,
