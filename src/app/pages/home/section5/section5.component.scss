@@ -18,6 +18,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         align-items: center;
+        border:5px solid pink; 
+
+        img{
+            border: 2px solid red;
+        }
     }
 
     @media only screen and (max-width: 953px) {
@@ -27,11 +32,10 @@
            gap: 16px;
         }
     }
-    @media only screen and (max-width: 393px) {
+    @media only screen and (max-width: 430px) {
         .for_part5 {
            display: grid;
            grid-template-columns:1fr;
-        //    gap: 0;
         }
     }
 }

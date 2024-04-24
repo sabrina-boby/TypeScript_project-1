@@ -5,25 +5,30 @@
     border: 5px solid blue;
     padding: 50px;
     align-items: center;
+}
 
-    .for_part4{
-        display: grid;
-        grid-template-columns:1fr 1fr 1fr 1fr;
-        // background: red;
-        width: 90%;
-        .card{
-            padding: 10%;
-            text-align: center;
-            border-right: 1px solid black;
-        }
+.for_part4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    // background: red;
+    width: 90%;
+
+    .card {
+        padding: 10%;
+        text-align: center;
+        border-right: 1px solid black;
     }
-    @media only screen and (max-width: 700px) {
-        .for_part4 {
-           display: grid;
-           grid-template-columns:1fr;
-        }
-        .card{
-            border-bottom: 1px solid black;
-        }
+}
+.subcontainer{
+    .for_part4:first-child{
+        border: 2px solid red;
+        border-right: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .for_part4 {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
