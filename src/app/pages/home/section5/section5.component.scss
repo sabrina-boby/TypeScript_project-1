@@ -3,26 +3,15 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border: 5px solid blue;
-    // background: #FAF5F1;
-    padding: 100px;
-
-
-    // display: flex;
-    // justify-content: center;
-    // flex-direction: column;
-    // align-items: center;
     // border: 5px solid blue;
+    // background: #FAF5F1;
+    padding: 0px 100px 50px 100px;
 
     .for_part5 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         align-items: center;
-        border:5px solid pink; 
-
-        img{
-            border: 2px solid red;
-        }
+        // border:5px solid pink; 
     }
 
     @media only screen and (max-width: 953px) {
