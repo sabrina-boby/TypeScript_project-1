@@ -7,5 +7,5 @@ import { PRODUCTS_DB } from 'src/app/core/db/products.db';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
-    products:any[] = PRODUCTS_DB;
-    }
+  products:any[] = PRODUCTS_DB;
+  }
