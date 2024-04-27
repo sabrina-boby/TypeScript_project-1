@@ -22,7 +22,7 @@
     .conditional_card{
         padding: 10%;
         text-align: center;
-        border-right: 1px solid black;
+        border-right: 1px solid rgb(201, 201, 201);
     }
 }
 
@@ -36,18 +36,5 @@
     .card {
         padding: 10%;
         text-align: center;
-        border-right: 1px solid black;
-    }
-    // .conditional_card{
-    //     border-right: none;
-    // }
-}
-
-
-@media only screen and (max-width: 730px) {
-    .for_part4 {
-        .conditional_card{
-            border-right: none;
-        }
     }
 }
