@@ -25,25 +25,13 @@
     <div class="subcontainer">
         <div class="for_part4">
             <span *ngFor="let i of [1,2,3,4]">
-                <div [class]="i == 4 ? 'card' : 'conditional_card'">
+                <div [class]="i === 4 ? 'card' : 'conditional_card'">
                     <div class="card">
                         <h2><b>90 Days Return</b></h2>
                         <p>Lorem ipsum dolor sit Consecteturcorrupti .</p>
                     </div>
                 </div>
             </span>
-            <!-- <div class="card">
-                <h2><b>90 Days Return</b></h2>
-                <p>Lorem ipsum dolor sit Consecteturcorrupti .</p>
-            </div>
-            <div class="card">
-                <h2><b>90 Days Return</b></h2>
-                <p>Lorem ipsum dolor sit Consecteturcorrupti .</p>
-            </div>
-            <div class="card">
-                <h2><b>90 Days Return</b></h2>
-                <p>Lorem ipsum dolor sit Conse  corrupti .</p>
-            </div> -->
         </div>
     </div>
 </div>
