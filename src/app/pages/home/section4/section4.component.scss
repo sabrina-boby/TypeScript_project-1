@@ -17,13 +17,12 @@
     .card {
         padding: 10%;
         text-align: center;
-        border-right: 1px solid black;
+        // border-right: 1px solid black;
     }
-}
-.subcontainer{
-    .for_part4:first-child{
-        // border: 2px solid red;
-        border-right: none;
+    .conditional_card{
+        padding: 10%;
+        text-align: center;
+        border-right: 1px solid black;
     }
 }
 
