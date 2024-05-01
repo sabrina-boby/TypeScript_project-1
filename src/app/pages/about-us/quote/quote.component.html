@@ -1,0 +1,21 @@
+<div class="sub_container">
+        <div>
+            <h2>Das sagen unsere Kunden</h2>
+        </div>
+        <div class="quotes_sec">
+            <ng-container *ngFor="let i of items">
+                <div class="quote">
+                    <div>
+                        <img [src]="i?.image" alt="">
+                    </div>
+                    <div class="text_sec">
+                        <p> {{i.text}}</p>
+                        <div>
+                            <h4>Kyle Merwin</h4>
+                            <h5>CO-owner</h5>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>

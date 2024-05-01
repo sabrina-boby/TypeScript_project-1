@@ -1,0 +1,6 @@
+export const QUOTE_DB: any[] = [
+    { image: '../../../assets/images/home/Image.png',name:'Kyle Merwin' , title: 'CO-owner', text: 'Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.' },
+    { image: '../../../assets/images/home/Image.png',name:'Kyle Merwin' , title: 'CO-owner', text: 'Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.' },
+    { image: '../../../assets/images/home/Image.png',name:'Kyle Merwin' , title: 'CO-owner', text: 'Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.' },
+    { image: '../../../assets/images/home/Image.png',name:'Kyle Merwin' , title: 'CO-owner', text: 'Aut nihil mollitia deserunt quia sed rem. Quibusdam amet veniam rerum id rerum beatae. Quas rerum iste necessitatibus. At voluptates ad magnam blanditiis excepturi expedita aut. Aut repellat inventore qui minima illum est.' },
+]

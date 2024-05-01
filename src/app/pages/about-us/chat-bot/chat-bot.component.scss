@@ -1,0 +1,29 @@
+.sub_container {
+    border: 3px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+.cht_bot {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 50px;
+    background: rgb(9, 23, 95);
+    color: white;
+
+    h2 {
+        font-weight: 700;
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    ul{
+        padding-left: 25px;
+    }
+    button {
+        background: rgb(6, 147, 227);
+        padding: 15px 48px 15px 48px;
+        border-radius: 5px;
+        color: white;
+    }
+}

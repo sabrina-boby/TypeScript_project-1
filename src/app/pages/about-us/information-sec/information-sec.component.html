@@ -1,0 +1,24 @@
+<div class="sub_container">
+    <div class="information_sec">
+        <div>
+            <h2>Warum sich Unternehmen für BOTfriends entscheiden</h2>
+        </div>
+        <div class="cards_section">
+
+            <ng-container *ngFor="let i of items; let count=index">
+                <div [class]="count < items.length-1 ? 'card':'card_4'">
+                    <div class="star_icon">
+                        <img [src]="i?.image" alt="">
+                    </div>
+                    <h4>{{i.headline}}</h4>
+                    <p>
+                        {{i.text}}
+                    </p>
+                    <div class="card_button">
+                        <p>Systeme integrieren</p>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

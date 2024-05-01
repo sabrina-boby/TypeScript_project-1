@@ -4,27 +4,30 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { BannerComponent } from './banner/banner.component';
 import { CardComponent } from './card/card.component';
-import { Section3Component } from './section3/section3.component';
-import { Section4Component } from './section4/section4.component';
-import { Section5Component } from './section5/section5.component';
-import { FooterComponent } from './footer/footer.component';
-import { CopyrightSecComponent } from './copyright-sec/copyright-sec.component';
+import { HeroSectionComponent } from './hero-section/hero-section.component';
+import { LocationStripComponent } from './location-strip/location-strip.component';
+import { ImgGellaryComponent } from './img-gellary/img-gellary.component';
+import { FooterModule } from 'src/app/shared/components/footer/footer.module';
+import { CopyrightSecModule } from 'src/app/shared/components/copyright-sec/copyright-sec.module';
+import { ProductCardModule } from 'src/app/shared/components/product-card/product-card.module';
 
 @NgModule({
   declarations: [
     HomeComponent,
     BannerComponent,
     CardComponent,
-    Section3Component,
-    Section4Component,
-    Section5Component,
-    FooterComponent,
-    CopyrightSecComponent,
+   
+    HeroSectionComponent,
+    LocationStripComponent,
+    ImgGellaryComponent,
    
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    FooterModule,
+    CopyrightSecModule,
+    ProductCardModule,
   ]
 })
 export class HomeModule { }

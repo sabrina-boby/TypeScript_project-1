@@ -1,0 +1,66 @@
+<!-- <div class="sub_container">
+    <div class="full_sec">
+        <div class="headline">
+            <h2>Frequently Ask Questions</h2>
+        </div>
+
+        <div class="ask_sec">
+            <span *ngFor="let i of items">
+                <div class="toggle_icon">
+                    <div>
+                        <h3><b>{{i.ques}}</b></h3>
+                    </div>
+                    <button (click)="handle_toggle()">
+                        <div *ngIf="isShow==true">
+                            <img src="../../../../assets/images/home/Keyboard arrow down.png" alt="">
+                        </div>
+                        <div *ngIf="isShow==false">
+                            <img src="../../../../assets/images/home/Keyboard arrow down (1).png" alt="">
+                        </div>
+                    </button>
+                </div>
+                <div *ngIf="isShow==true">
+                    <p>
+                        {{i.ans}}
+                    </p>
+                </div>
+            </span>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+
+<div class="sub_container">
+    <div class="full_sec">
+        <div class="headline">
+            <h2>Frequently Ask Questions</h2>
+        </div>
+
+        <div class="ask_sec">
+            <span *ngFor="let i of items; let j = index">
+                <div class="toggle_icon">
+                    <div>
+                        <h3><b>{{i.ques}}</b></h3>
+                    </div>
+                    <button (click)="handleClick(j)">
+                        <div>
+            
+                            <i *ngIf="toggle[j] == true" class="fa-solid fa-angle-down"></i>
+                            <i *ngIf="toggle[j] !== true" class="fa-solid fa-angle-up"></i>
+                            <!-- <i *ngIf="toggle[j] == false" class="fa-solid fa-angle-up"></i> -->
+                        </div>
+                    </button>
+                </div>
+                <div *ngIf="toggle[j]">
+                    <p>
+                        {{i.ans}}
+                    </p>
+                </div>
+            </span>
+        </div>
+
+    </div>
+</div>
