@@ -23,15 +23,14 @@ export class AskQuestionComponent {
 
 
   toggle: boolean[] = [];
-  handleClick(index: number) {
+  handleClick(index: any) {
     this.toggle[index] = !this.toggle[index];
-    // console.log(this.items[index]);
     for (let x in this.items) {
-      // if (0 == 1) {
-
-      // }
+      if (x != index) {
+        this.toggle[x] = false;
+      }
     }
   }
 
-  
+
 }

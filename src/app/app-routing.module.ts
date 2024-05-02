@@ -12,20 +12,14 @@ const routes: Routes = [
         redirectTo:'home',
         pathMatch:'full'
        },
-      //  {
-      //   path:"home",
-      //   loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
-      //  },
-       {
-        path:"about-us",
-        loadChildren: () => import('./pages/about-us/about-us.module').then(m => m.AboutUsModule)
-       },
-
        {
         path:"home",
         loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
        },
-      
+       {
+        path:"about-us",
+        loadChildren: () => import('./pages/about-us/about-us.module').then(m => m.AboutUsModule)
+       },
     ]
   }
 ];
