@@ -10,10 +10,27 @@ export class AskQuestionComponent {
   items: any[] = ASK_QUESTION_DB;
 
 
-  // isShow: any = false;
-  // handle_toggle() {
-  //   this.isShow = !this.isShow;
-  // }
+
+  isShow: any[] = [];
+ 
+
+  constructor(){
+    this.items.forEach(() => {
+      // console.log(this.isShow);
+      this.isShow.push(false);
+    });
+  }
+
+
+  handle_toggle(index: any) {
+    this.isShow[index] = !this.isShow[index];
+    // console.log(this.isShow);
+    for (let x in this.items) {
+          if (x != index) {
+            this.isShow[x] = false;
+          }
+        }
+  }
 
 
   // toggle: boolean[] = [];
@@ -22,15 +39,15 @@ export class AskQuestionComponent {
   // }
 
 
-  toggle: boolean[] = [];
-  handleClick(index: any) {
-    this.toggle[index] = !this.toggle[index];
-    for (let x in this.items) {
-      if (x != index) {
-        this.toggle[x] = false;
-      }
-    }
-  }
+  // toggle: boolean[] = [];
+  // handleClick(index: any) {
+  //   this.toggle[index] = !this.toggle[index];
+  //   for (let x in this.items) {
+  //     if (x != index) {
+  //       this.toggle[x] = false;
+  //     }
+  //   }
+  // }
 
 
 }
