@@ -9,6 +9,7 @@ import { CopyrightSecModule } from 'src/app/shared/components/copyright-sec/copy
 import { InformationSecComponent } from './information-sec/information-sec.component';
 import { QuoteComponent } from './quote/quote.component';
 import { AskQuestionComponent } from './ask-question/ask-question.component';
+import { ContactModule } from './contact/contact.module';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { AskQuestionComponent } from './ask-question/ask-question.component';
     AboutUsRoutingModule,
     FooterModule,
     CopyrightSecModule,
+    ContactModule
   ]
 })
 export class AboutUsModule { }

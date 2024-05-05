@@ -1,0 +1,84 @@
+<div class="sub_container">
+    <div class="contact">
+        <div class="Contact_sec">
+            <div class="inside_contact_sec">
+                <h1><b>Contact Information</b></h1>
+                <p>Say something to start a live chat!</p>
+
+                <div class="Contact_sec_middle">
+                    <div class="icon">
+                        <div><i class="fa-solid fa-phone-volume"></i></div>
+                        <div>+1012 3456 789</div>
+                    </div>
+                    <div class="icon">
+                        <div><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <div>demo@gmail.com</div>
+                    </div>
+                    <div class="icon">
+                        <div><i class="fa-solid fa-location-dot"></i></div>
+                        <div>132 Dartmouth Street Boston, Massachusetts 02156 United States</div>
+                    </div>
+                </div>
+                <div class="social">
+                    <div><img src="../../../../assets/images/home/e92a7e4f-22e4-4779-88b3-f1cd2dea8380.jpg" alt="">
+                    </div>
+                    <div><img src="../../../../assets/images/home/Frame 1000001750.png" alt=""></div>
+                    <div><img src="../../../../assets/images/home/Frame 1000001751.png" alt=""></div>
+                </div>
+                <div class="bg_img_part">
+                    <div class="img_1">
+                        <img src="../../../../assets/images/home/Ellipse_793.png" alt="">
+                    </div>
+                    <div class="img_2">
+                        <img src="../../../../assets/images/home/Frame 1000008729.png" alt="">
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="from_sec">
+            <form [formGroup]="formData" action="">
+                <div class="inside_from_sec1">
+                    <div class="left_field">
+
+                        <label for="fname">First Name</label><br>
+                        <input type="text" formControlName="fname"><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" formControlName="email"><br><br>
+
+                    </div>
+                    <div class="right_field">
+
+                        <label for="lname">Last Name</label><br>
+                        <input type="text" formControlName="lname"><br>
+                        <label for="phone_number">Phone Number</label><br>
+                        <input type="number" formControlName="phone"><br><br>
+
+                    </div>
+                </div>
+                <div class="message_fild">
+                    <label for="text">Message</label><br>
+                    <input type="text" placeholder="Write your message.." formControlName="message"><br><br>
+                </div>
+                <p>Select Subject?</p>
+                <div class="checkbox_field">
+                    <div class="checkbox_container">
+                        <input type="checkbox">
+                        <h6>General Inquiry</h6>
+                    </div>
+                    <div class="checkbox_container">
+                        <input type="checkbox">
+                        <h6>General Inquiry</h6>
+                    </div>
+                    <div class="checkbox_container">
+                        <input type="checkbox">
+                        <h6>General Inquiry</h6>
+                    </div>
+                </div>
+
+                <button (click)="onsubmit()">Send Message</button>
+
+
+            </form>
+        </div>
+    </div>
+</div>

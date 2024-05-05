@@ -1,13 +1,18 @@
 .sub_container {
-    border: 2px solid red;
+    // border: 2px solid red;
+    padding-top: 5%;
+    padding-bottom: 5%;
     display: flex;
-    justify-content: center;
-
+    justify-content: start;
+    padding-left: 5%;
 }
 
 .full_sec {
-    background: pink;
-    width: 90%;
+    // background: pink;
+    background: rgb(245, 245, 245);
+    width: 85%;
+    border-radius: 20px;
+
     // text-align: center;
     h2 {
         font-weight: 700;
@@ -16,17 +21,36 @@
         padding-top: 50px;
         text-align: center;
     }
-    .toggle_icon{
+
+    .toggle_icon {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
     .ask_sec {
-        width: 90%;
+        width: 100%;
         padding-left: 8%;
         padding-right: 8%;
-        background: yellow;
+        background: rgb(245, 245, 245);
+        // background: rgb(245, 245, 245);
+        // background: yellow;
         border-radius: 15px;
     }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+        margin-bottom: 5%;
+
+        button {
+            padding: 15px 40px 15px 40px;
+            border-radius: 30px;
+            background: white;
+            border: 2px solid white;
+            color: #09175F;
+        }
+    }
+
 }

@@ -1,7 +1,9 @@
 .sub_container {
-    border: 3px solid red;
+    // border: 3px solid red;
+    font-family: 'Montserrat';
     display: flex;
     justify-content: center;
+    line-height: 1.6;
 }
 
 .cht_bot {
@@ -16,14 +18,20 @@
         font-weight: 700;
         font-size: 30px;
         padding-bottom: 20px;
+        line-height: 1.6;
+        letter-spacing: 2px;
+
     }
-    ul{
+
+    ul {
         padding-left: 25px;
     }
+
     button {
         background: rgb(6, 147, 227);
-        padding: 15px 48px 15px 48px;
+        padding: 15px 43px 15px 43px;
         border-radius: 5px;
         color: white;
+        border: 1px solid rgb(6, 147, 227);
     }
 }
